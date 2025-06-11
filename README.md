@@ -79,181 +79,181 @@
 - **其他首都信息** - 例如，苏克雷，玻利维亚 = _虽然苏克雷是宪法规定的首都，但拉巴斯是政府所在地。_
 - **国家地位信息** - 例如，德涅斯特里 = _被摩尔多瓦声称的独立国家_。
 
-### Custom study
+### 自定义学习
 
-Anki's [search feature](https://docs.ankiweb.net/searching), coupled with the deck's comprehensive [tag structure](#deck-structure), allows for the creation of [filtered decks](https://docs.ankiweb.net/filtered-decks#creating-manually) covering a wide range of learning goals and abilities. Here are some search queries you can use:
+Anki的[搜索功能](https://docs.ankiweb.net/searching)结合卡组全面的[标签结构](#deck-structure)，允许创建[过滤卡组](https://docs.ankiweb.net/filtered-decks#creating-manually)来满足各种学习目标和能力。以下是一些可用的搜索查询：
 
-- `card:"Flag - Country"` to learn flags and nothing else;
-- `tag:UG::Sovereign_State` to focus on sovereign states and exclude dependent territories, water bodies and continents;
-- `-tag:"UG::Oceans+Seas"` (with "`-`" in front of the filter) to learn everything except oceans, seas and other water bodies;
-- `card:"Map - Country" tag:UG::Sovereign_State tag:UG::Europe` to learn the location of Europe's sovereign states;
-- `(card:"Country - Capital" or card:"Capital - Country") tag:UG::Sovereign_State` to learn the capitals of the world's sovereign states;
-- `tag:UG::North_America -tag:UG::Caribbean` to focus on the countries in North America, but not in the Caribbean (i.e. those in Northern and Central America).
+- `card:"Flag - Country"` 仅学习国旗；
+- `tag:UG::Sovereign_State` 专注于主权国家，不包括属地、水域和大陆；
+- `-tag:"UG::Oceans+Seas"` （在过滤器前加上"`-`"）学习除海洋、海域和其他水域外的所有内容；
+- `card:"Map - Country" tag:UG::Sovereign_State tag:UG::Europe` 学习欧洲主权国家的地理位置；
+- `(card:"Country - Capital" or card:"Capital - Country") tag:UG::Sovereign_State` 学习世界主权国家的首都；
+- `tag:UG::North_America -tag:UG::Caribbean` 专注于北美洲的国家，但不包括加勒比海地区（即只包含北美和中美地区）。
 
-Alternatively, instead of moving your desired subset of cards into a filtered deck, you can suspend the remaining cards.  In this case, you need to search for the inverse of your desired subset and [suspend](https://docs.ankiweb.net/browsing.html?highlight=suspend#cards) the cards found by that search.  For instance, to learn flags and nothing else (taking the first example above), you would search for `deck:"Ultimate Geography" -card:"Flag - Country"`.  (You need the first term to search only within the UG deck, and `-` for the inverse.)  The advantage of suspending cards is that filtered decks don't have an easy way of configuring daily new card limits.  The disadvantage is that it can be slightly more fiddly, especially if you plan to later study the remaining cards (you need to suspend and unsuspend cards).
+另一种方式是，不将你想要的卡片子集移入过滤卡组，而是暂停其余卡片。在这种情况下，你需要搜索你想要的子集的反向集合，然后[暂停](https://docs.ankiweb.net/browsing.html?highlight=suspend#cards)这些搜索结果。例如，要仅学习国旗（如上面的第一个例子），你应该搜索`deck:"Ultimate Geography" -card:"Flag - Country"`。（你需要第一个条件只在UG卡组中搜索，并使用`-`表示反向。）暂停卡片的优点是过滤卡组没有便捷的方式来配置每日新卡片限制。缺点是操作略显繁琐，尤其是如果你计划后续学习剩余的卡片（你需要暂停和取消暂停卡片）。
 
-## Getting started
+## 开始使用
 
-First-time here? Welcome! 👋
+第一次使用？欢迎！👋
 
-In order to install and later upgrade _Ultimate Geography_, you'll need to first install an Anki add-on called [CrowdAnki](https://github.com/Stvad/CrowdAnki):
+要安装并在以后升级 _终极地理_，你需要先安装一个名为 [CrowdAnki](https://github.com/Stvad/CrowdAnki) 的 Anki 插件：
 
-1. Open Anki on your computer, go to the _Tools_ menu and select _Add-ons_.
-1. In the dialog box, click on _Get Add-ons..._ and paste in the code provided on [this page](https://ankiweb.net/shared/info/1788670778).
-1. Click on _OK_ to install the add-on, and then restart Anki.
+1. 在你的电脑上打开 Anki，进入 _工具_ 菜单并选择 _插件_。
+1. 在对话框中，点击 _获取插件..._ 并粘贴[该页面](https://ankiweb.net/shared/info/1788670778)上提供的代码。
+1. 点击 _确定_ 来安装插件，然后重启 Anki。
 
-You're now ready to install _Ultimate Geography_:
+你现在已准备好安装 _终极地理_：
 
-1. Go to the **[_Releases_ page](https://github.com/anki-geo/ultimate-geography/releases)**.
-1. In the latest release's _Assets_ section, download the ZIP archive of the version of the deck you'd like to use. You can choose between [a standard, extended and experimental version](#features) in a number of [languages](#ultimate-geography) -- for instance, if you're after the standard German deck, download `Ultimate_Geography_v[...]_DE.zip`.
-1. Extract the content of the archive on your computer.
-1. Open Anki and make sure your devices are all synchronised.
-1. Create [a manual backup](https://docs.ankiweb.net/backups.html#creating) via _File -> Create Backup_ in case something goes wrong.
-1. In the _File_ menu, select _CrowdAnki: Import from disk_.
-1. Browse for and select the folder you extracted from the archive, which contains the deck's JSON file and `media` folder -- e.g. `Ultimate Geography [DE]`.
-1. Don't change anything in the _CrowdAnki Import Settings_ dialog box that opens -- just press _OK_ to start the import. A dialog box should then confirm that the import was successful.
+1. 前往 **[_发布页面_](https://github.com/anki-geo/ultimate-geography/releases)**。
+1. 在最新发布版本的 _资源_ 部分，下载你想要使用的卡组版本的 ZIP 压缩包。你可以在多种[语言](#ultimate-geography)中选择[标准版、扩展版和实验版](#features) -- 例如，如果你需要标准德语版本，下载 `Ultimate_Geography_v[...]_DE.zip`。
+1. 将压缩包内容解压到你的计算机上。
+1. 打开 Anki 并确保你的所有设备均已同步。
+1. 通过 _文件 -> 创建备份_ 创建[手动备份](https://docs.ankiweb.net/backups.html#creating)，以防出现问题。
+1. 在 _文件_ 菜单中，选择 _CrowdAnki: 从磁盘导入_。
+1. 浏览并选择你从压缩包中提取的文件夹，该文件夹包含卡组的 JSON 文件和 `media` 文件夹 -- 例如 `Ultimate Geography [DE]`。
+1. 在打开的 _CrowdAnki 导入设置_ 对话框中不要更改任何内容 -- 直接按 _确定_ 开始导入。然后应该会出现一个对话框，确认导入成功。
 
-👉 To stay informed of new releases, make sure to [watch this repository's releases](https://help.github.com/en/articles/watching-and-unwatching-releases-for-a-repository).
+👉 要及时了解新版本，请确保[关注该仓库的发布](https://help.github.com/en/articles/watching-and-unwatching-releases-for-a-repository)。
 
-## Upgrading
+## 升级
 
-The upgrade process is typically the same as the installation process explained in the [previous section](#getting-started). However, some situations require extra care. As a general rule, **always read the release notes carefully**; they will likely tell you what to do or point you to a page that does.
+升级过程通常与[前面部分](#getting-started)所解释的安装过程相同。然而，某些情况需要额外注意。作为一般原则，**始终仔细阅读发布说明**；它们通常会告诉你如何操作或将你引导到相关页面。
 
-### First upgrade after APKG import
+### 从APKG导入后首次升级
 
-You may have initially installed _Ultimate Geography_ by importing an **APKG file**. You may have downloaded such a file from this repository or from the [deck's page](https://ankiweb.net/shared/info/2109889812) on AnkiWeb, as this used to be the recommended installation process.
+你可能最初是通过导入**APKG文件**安装_终极地理_的。你可能从这个仓库或从AnkiWeb上的[卡组页面](https://ankiweb.net/shared/info/2109889812)下载了这样的文件，因为这曾经是推荐的安装方式。
 
-If you're in this situation and wish to upgrade, proceed as follows:
+如果你处于这种情况并希望升级，请按以下步骤操作：
 
-1. Perform the _Getting started_ steps exactly.
-1. You should end up with two decks: your original deck called "Ultimate Geography" and a new, duplicated deck called "Ultimate Geography_2". Unless you created some notes of your own, every card in your original deck should have moved automatically to the new deck and your original deck should now be empty. You can verify this in Anki's [card browser](https://docs.ankiweb.net/browsing).
-1. To get back to having a single deck, move any of your own cards out of the original deck and delete it. Then, rename the new deck to "Ultimate Geography". From here on, future upgrades will be seamless.
+1. 精确执行_开始使用_部分的步骤。
+1. 你应该会得到两个卡组：你的原始卡组名为“终极地理”和一个新的、重复的卡组名为“终极地理_2”。除非你创建了一些自己的笔记，否则你原始卡组中的每张卡片应该已自动移动到新卡组中，而你的原始卡组现在应该是空的。你可以在Anki的[卡片浏览器](https://docs.ankiweb.net/browsing)中验证这一点。
+1. 要回到只有一个卡组的状态，将你自己的卡片从原始卡组移出并删除原始卡组。然后，将新卡组重命名为“终极地理”。从这里开始，以后的升级将非常顺利。
 
-If you're upgrading from v3.3 or earlier, then you may want to additionally follow the [instructions for the v4.0 release](https://github.com/anki-geo/ultimate-geography/releases/tag/v4.0).
+如果你是从v3.3或更早版本升级，那么你可能还需要遵循[v4.0发布版的说明](https://github.com/anki-geo/ultimate-geography/releases/tag/v4.0)。
 
-### Keeping deck customisations
+### 保留卡组自定义设置
 
-If you've made, or are thinking of making, any changes to your _Ultimate Geography_ deck, check the [_Customising the deck_](#customising-the-deck) section below to see what will happen to them the next time you upgrade, and whether you need to take any steps to preserve them.
+如果你已经对你的_终极地理_卡组进行了任何更改，或者正在考虑进行更改，请查看下面的[自定义卡组](#customising-the-deck)部分，了解在下次升级时这些更改会发生什么情况，以及你是否需要采取任何措施来保存这些更改。
 
-### Levelling up from standard to extended (or to experimental)
+### 从标准版升级到扩展版（或实验版）
 
-Importing an extended deck on top of a standard deck is tricky and needs care. You may instead consider learning the extended deck from scratch. To do so, either:
+在标准版卡组上导入扩展版卡组是棘手的，需要小心操作。你可能更值得考虑从头开始学习扩展版卡组。要做到这一点，可以：
 
-- remove the standard deck first by following the instructions in the [_Major version_](#major-version) section below, or
-- import the extended deck in a separate Anki profile.
+- 首先按照下面[主要版本升级](#major-version)部分的说明删除标准版卡组，或者
+- 在单独的Anki配置文件中导入扩展版卡组。
 
-If you'd rather keep your progress, proceed as follows:
+如果你想保留你的学习进度，请按照以下步骤操作：
 
-1. Perform the _Getting started_ steps exactly.
-1. Instead of a dialog box confirming that the import was successful, you'll see another dialog box titled _Change Note Type_. In the _Cards_ section, set _Change Flag - Country to:_ to "Flag - Country" (instead of "Country - Flag"), and set _Change Map - Country to:_ to "Map - Country" (instead of "Flag - Country").
-1. Check that the other cards and fields map correctly and click on _OK_ to start the import.
+1. 精确执行_开始使用_部分的步骤。
+1. 不会出现确认导入成功的对话框，而是会出现另一个标题为_更改笔记类型_的对话框。在_卡片_部分，将_将Flag - Country更改为:_设置为"Flag - Country"（而非"Country - Flag"），并将_将Map - Country更改为:_设置为"Map - Country"（而非"Flag - Country"）。
+1. 检查其他卡片和字段是否正确映射，然后点击_确定_开始导入。
 
-The "mappings" for switching from standard to extended, as well as for all currently possible deck type changes are shown in tabular format [here](https://github.com/anki-geo/ultimate-geography/wiki/Switching-deck-type#specific-guides).
+从标准版切换到扩展版的“映射”，以及所有当前可能的卡组类型变更的表格格式可以在[这里](https://github.com/anki-geo/ultimate-geography/wiki/Switching-deck-type#specific-guides)找到。
 
-### Major version
+### 主要版本升级
 
-Major versions (e.g. `v3.0`) typically indicate that upgrading ["the normal way"](#upgrading) may lead to a significant loss of progress, or to the loss of [some of the customisations](#customising-the-deck) you may have made to the deck that would normally be preserved. This can occur, for instance, when [significant changes](https://github.com/anki-geo/ultimate-geography/releases/tag/v3.0) are made to the structure of the deck.
+主要版本（如`v3.0`）通常表示，[“常规方式”](#upgrading)升级可能会导致重要的学习进度丢失，或者失去你对卡组进行的、原本可以被保留的[一些自定义设置](#customising-the-deck)。例如，当卡组结构发生[重大变化](https://github.com/anki-geo/ultimate-geography/releases/tag/v3.0)时，就可能会发生这种情况。
 
-The [release notes](https://github.com/anki-geo/ultimate-geography/releases) and [upgrade instructions](https://github.com/anki-geo/ultimate-geography/wiki/Upgrade-instructions) on the wiki will typically provide you with a way to upgrade to the major version _without_ losing your progress. However, in some cases, the process can be daunting. 😰 If keeping your progress isn't worth the effort, or if you just feel like starting the deck again from scratch, then we recommend you perform a "clean import" as follows:
+wiki上的[发布说明](https://github.com/anki-geo/ultimate-geography/releases)和[升级指南](https://github.com/anki-geo/ultimate-geography/wiki/Upgrade-instructions)通常会提供一种方法，让你在_不_丢失学习进度的情况下升级到主要版本。然而，在某些情况下，这个过程可能会很棘手。😰 如果保留学习进度不值得花费这些精力，或者如果你只是想从头开始重新学习这个卡组，那么我们建议你执行“清洁导入”，如下：
 
-1. Open Anki and make sure your devices are all synchronised.
-1. Delete the `Ultimate Geography` deck.
-1. In the _Tools_ menu, select _Manage Note Types_, then delete the `Ultimate Geography` note type.
-1. In the _Tools_ menu, select _Check Database_.
-1. Sync the changes with AnkiWeb and with all your devices.
-1. You can now follow the steps of the [_Getting started_](#getting-started) section to install the major version.
+1. 打开Anki并确保你的所有设备均已同步。
+1. 删除`终极地理`卡组。
+1. 在_工具_菜单中，选择_管理笔记类型_，然后删除`终极地理`笔记类型。
+1. 在_工具_菜单中，选择_检查数据库_。
+1. 将变更与AnkiWeb和所有设备同步。
+1. 现在你可以按照[开始使用](#getting-started)部分的步骤来安装主要版本。
 
-## Deck structure
+## 卡组结构
 
-The notes are based on a **note type** called _Ultimate Geography_, which defines **eight fields**: _Country_, _Country info_, _Capital_, _Capital info_, _Capital hint_, _Flag_, _Flag similarity_, and _Map_.
+笔记基于一种名为_终极地理_的**笔记类型**，它定义了**八个字段**：_国家_、_国家信息_、_首都_、_首都信息_、_首都提示_、_国旗_、_国旗相似性_和_地图_。
 
-The cards are generated by Anki on import based on **four templates**: _Country - Capital_, _Capital - Country_, _Flag - Country_, and _Map - Country_. The extended version of the deck includes two additional templates: _Country - Flag_ and _Country - Map_.
+卡片在导入时由Anki根据**四种模板**生成：_国家 - 首都_、_首都 - 国家_、_国旗 - 国家_和_地图 - 国家_。卡组的扩展版包含两个额外的模板：_国家 - 国旗_和_国家 - 地图_。
 
-The appearance of the cards is controlled solely with CSS; the content of the notes is free from HTML markup.
+卡片的外观完全由CSS控制；笔记的内容不包含HTML标记。
 
-Every note is tagged. The tags, which are listed below by category, are prefixed with `UG::` so they don't conflict with other decks. They can be used to create [filtered decks](https://docs.ankiweb.net/filtered-decks#creating-manually) for [custom study](#custom-study).
+每个笔记都有标签。这些标签按类别列出，以`UG::`为前缀，以避免与其他卡组冲突。它们可用于为[自定义学习](#custom-study)创建[过滤卡组](https://docs.ankiweb.net/filtered-decks#creating-manually)。
 
-- Type - `UG::Sovereign_State`, `UG::Oceans+Seas`, `UG::Continents`
-- Continent - `UG::Africa`, `UG::Asia`, `UG::Europe`, `UG::North_America`, `UG::Oceania`, `UG::South_America`
-- Region - `UG::Caribbean`, `UG::Middle_East`, `UG::Southeast_Asia`, `UG::European_Union`, `UG::Mediterranean`, `UG::East_Africa`, `UG::West_Africa`
+- 类型 - `UG::Sovereign_State`（主权国家）、`UG::Oceans+Seas`（海洋和海域）、`UG::Continents`（大洲）
+- 大洲 - `UG::Africa`（非洲）、`UG::Asia`（亚洲）、`UG::Europe`（欧洲）、`UG::North_America`（北美洲）、`UG::Oceania`（大洋洲）、`UG::South_America`（南美洲）
+- 地区 - `UG::Caribbean`（加勒比海）、`UG::Middle_East`（中东）、`UG::Southeast_Asia`（东南亚）、`UG::European_Union`（欧盟）、`UG::Mediterranean`（地中海）、`UG::East_Africa`（东非）、`UG::West_Africa`（西非）
 
-## Customising the deck
+## 自定义卡组
 
-Interested in making changes to the deck in Anki? Here's what you need to know.
+有兴趣在Anki中对卡组进行更改？以下是你需要了解的内容。
 
-### Changes that are or can be preserved 💖
+### 可以保留的更改 💖
 
-- **Adding your own cards and media files**
+- **添加你自己的卡片和媒体文件**
 
-  Go wild. 🌊 Upgrading will not affect any new cards you create, or any new media files you add to the newly added cards.
+  尽情发挥。🌊 升级不会影响你创建的新卡片，或你添加到新卡片中的任何新媒体文件。
 
-  If a duplicated deck is [created on import](#first-upgrade-after-apkg-import), your own cards will stay in their original deck.
+  如果[在导入时创建了重复的卡组](#first-upgrade-after-apkg-import)，你自己的卡片将保留在原始卡组中。
 
-- **Moving cards into another deck**
+- **将卡片移入另一个卡组**
 
-  Some people prefer to combine multiple decks into one to review them together.
+  一些人希望把多个卡组合并到一个卡组中以便于一起复习。
 
-  By default, CrowdAnki will move all the cards back into the _Ultimate Geography_ deck on import. To prevent this behaviour and update the existing cards in place, make sure to tick the _Do Not Move Existing Cards_ checkbox in the _CrowdAnki Import Settings_ dialog box, when following the steps in the [_Getting started_](@getting-started) section.
+  默认情况下，CrowdAnki在导入时会将所有卡片移回到_终极地理_卡组中。要防止这种行为并就地更新现有卡片，请确保在按照[开始使用](@getting-started)部分的步骤操作时，在_CrowdAnki导入设置_对话框中勾选_不移动现有卡片_复选框。
 
-  > Note that if you had previously deleted the _Ultimate Geography_ deck, it will be recreated and may contain new cards.
+  > 请注意，如果你之前删除了_终极地理_卡组，它将被重新创建，并可能包含新卡片。
 
-- **Changing the deck's options**
+- **更改卡组的选项**
 
-  Deck options are, for instance, the number of new cards per day, the maximum number of reviews per day, etc.
+  卡组选项包括，例如，每天的新卡片数量、每天的最大复习数量等。
 
-  When importing the deck for the first time, CrowdAnki creates a new "option group" called _Ultimate Geography_ (unless it already exists). If you've made any changes to this group's options, they will be reverted on import.
+  在首次导入卡组时，CrowdAnki会创建一个名为_终极地理_的新“选项组”（除非它已经存在）。如果你对这个组的选项进行了任何更改，它们在导入时将被恢复。
 
-  To avoid losing your options, create your own option group and give it a distinctive name. After you upgrade, you'll just have to switch the deck back to this option group.
+  为了避免失去你的选项，创建你自己的选项组并给它一个独特的名称。升级后，你只需要将卡组切换回这个选项组。
 
-- **Customising the templates and styles**
+- **自定义模板和样式**
 
-  Any edits you make to the built-in templates of the _Ultimate Geography_ note type will be reverted on upgrade. Same goes with the CSS styles that are shared by all the templates.
+  你对_终极地理_笔记类型的内置模板所做的任何编辑在升级时都会被恢复。所有模板共享的CSS样式也是如此。
 
-  One way to work around this and preserve your changes is to first [clone the note type](https://docs.ankiweb.net/editing#adding-a-note-type) and switch all the cards to the new note type in the Anki browser. You can then make your template and style changes in the cloned note type without affecting the original note type. The next time you upgrade, all the cards will switch back to the original note type, but you can easily switch them back to your customised note type in the Anki browser.
+  一种解决方法并保留你的更改是首先[克隆笔记类型](https://docs.ankiweb.net/editing#adding-a-note-type)，然后在Anki浏览器中将所有卡片切换到新的笔记类型。你然后可以在克隆的笔记类型中进行模板和样式的更改，而不会影响原始笔记类型。下次升级时，所有卡片将切换回原始笔记类型，但你可以在Anki浏览器中轻松将它们切换回你的自定义笔记类型。
 
-  > Note that you may have to update your custom templates and styles afterwards to stay in line with the built-in templates.
+  > 请注意，之后你可能需要更新你的自定义模板和样式，以保持与内置模板一致。
 
-  A word of caution ⚠️: the above workaround is not guaranteed to work, so you may want to back up your local deck before upgrading by first exporting it with CrowdAnki.
+  警告⬇️：上述解决方法不保证有效，所以在升级前，你可能希望先通过CrowdAnki导出来备份你的本地卡组。
 
-### Changes that get reverted 😬
+### 会被还原的更改 😬
 
-The changes listed below will be lost the next time you upgrade and there's no other solution than to make the changes again manually after the upgrade.
+下面列出的更改将在下次升级时丢失，除了在升级后再次手动进行更改外，没有其他解决方法。
 
-- **Renaming the deck or changing its description**
+- **重命名卡组或更改其描述**
 
-  Upgrading always restores the deck's default name and description.
+  升级始终会恢复卡组的默认名称和描述。
 
-- **Editing the content of a note**
+- **编辑笔记的内容**
 
-  Examples:
+  例如：
 
-  - adding a link to Wikipedia in the _Country info_ field of Curaçao;
-  - adding your own memoization hint to the _Flag similarity_ field of Poland;
-  - adding or removing a tag from a note;
-  - renaming a tag.
+  - 在库拉索的_国家信息_字段中添加指向维基百科的链接；
+  - 在波兰的_国旗相似性_字段中添加你自己的记忆提示；
+  - 在笔记中添加或删除标签；
+  - 重命名标签。
 
-  > If you correct a typo or a mistake, don't forget to [open an issue](https://github.com/anki-geo/ultimate-geography/issues/new) or a Pull Request so you don't lose your correction the next time you upgrade. 😉
+  > 如果你纠正了拼写错误或其他错误，不要忘记[提交问题](https://github.com/anki-geo/ultimate-geography/issues/new)或发起合并请求，这样你就不会在下次升级时丢失你的更正。🚉
 
-- **Deleting a card**
+- **删除卡片**
 
-  Upgrading will bring the card back. If you don't want to learn a card at all or if you want to delay learning it, consider:
+  升级将会使卡片重新出现。如果你完全不想学习某张卡片，或者想要推迟学习，可以考虑：
 
-  - suspending or burying the card;
-  - creating a [filtered deck](#custom-study) that doesn't include the card;
-  - moving the card into an "icebox" deck and ticking the _Do Not Move Existing Cards_ the next time you upgrade, as explained in the previous section, under _Moving cards into another deck_.
+  - 暂停或淹污该卡片；
+  - 创建一个不包含该卡片的[过滤卡组](#custom-study)；
+  - 将卡片移入一个“冰箱”卡组，并在下次升级时勾选_不移动现有卡片_，如上一部分中_将卡片移入另一个卡组_所解释的。
 
-- **Adding or removing a template**
+- **添加或删除模板**
 
-  If you add your own template to the _Ultimate Geography_ note type, you will lose it and all the cards created from it when you upgrade. During the upgrade, you will see a dialog box asking you to match your current templates to the deck's built-in templates. (This same dialog box appears when importing the extended deck [on top of the standard deck](#levelling-up-from-standard-to-extended).) Unfortunately, you will have not choice but to map your extra template to "Nothing". You can re-add it again after the upgrade, to recreate the cards, but your progress on those cards will be lost.
+  如果你在_终极地理_笔记类型中添加了你自己的模板，在升级时你将失去它和所有从它创建的卡片。在升级过程中，你将看到一个对话框，要求你将当前模板与卡组的内置模板匹配。（在[将标准版卡组升级为扩展版](#levelling-up-from-standard-to-extended)时也会出现这个对话框。）不幸的是，你别无选择，只能将额外模板映射到“无”。升级后你可以重新添加它来重新创建卡片，但你在这些卡片上的学习进度将会丢失。
 
-  If you remove a template, you will see the same dialog box when you upgrade. The template and its associated cards will then be recreated. You can easily remove the template again after the upgrade, if you so wish.
+  如果你删除了模板，在升级时你将看到相同的对话框。然后该模板及其相关卡片将被重新创建。如果你愿意，可以在升级后再次轻松删除该模板。
 
-### Changes that prevent upgrading ⛔
+### 会阻止升级的更改 ⛔
 
-- **Adding a new field (population, currency, etc.)**
+- **添加新字段（人口、货币等）**
 
-  Adding a new field to the _Ultimate Geography_ note type will prevent you from upgrading the deck entirely. When you'll try to import it again, Anki will likely error and you'll risk losing your entire progress. Hopefully Anki, CrowdAnki, Brain Brew, and UG will [one day](https://github.com/ohare93/brain-brew/issues/4#issuecomment-644975261) find a way to make this possible.
+  在_终极地理_笔记类型中添加新字段将完全阻止你升级卡组。当你尝试再次导入时，Anki很可能会出错，而你将面临失去所有学习进度的风险。希望Anki、CrowdAnki、Brain Brew和UG能够[有一天](https://github.com/ohare93/brain-brew/issues/4#issuecomment-644975261)找到一种方法来实现这一点。
 
-  Note that the technique of cloning the note type explained under _Customising the templates and styles_ will not work here. If you've added a new field and are wanting to upgrade, you have no choice but to first **remove the field** from the note type.
+  请注意，在_自定义模板和样式_中解释的克隆笔记类型的技术在这里不起作用。如果你添加了新字段并希望升级，你别无选择，只能先从笔记类型中**删除该字段**。
 
-  > If you really know what you're doing, you could try exporting your deck with CrowdAnki, carefully merging the JSON file of the new version of the deck into your exported deck's JSON file, and then importing your deck back into Anki ... but if you're capable of this, your skills would be put to much better use contributing to [CrowdAnki](https://github.com/Stvad/CrowdAnki) and [Brain Brew](https://github.com/ohare93/brain-brew/)! 😁
+  > 如果你真的知道自己在做什么，你可以尝试使用CrowdAnki导出你的卡组，将卡组新版本的JSON文件小心地合并到你导出的卡组的JSON文件中，然后将你的卡组导回到Anki...但如果你有这样的能力，你的技能将在为[CrowdAnki](https://github.com/Stvad/CrowdAnki)和[Brain Brew](https://github.com/ohare93/brain-brew/)做贡献中得到更好的利用！😁
