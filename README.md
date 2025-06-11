@@ -1,41 +1,41 @@
-# Ultimate Geography
+# Ultimate Geography（终极地理）
 
-**Geography flashcard deck for [Anki](http://ankisrs.net/)** featuring:
+**为[Anki](http://ankisrs.net/)设计的地理知识记忆卡片**，包含：
 
-- the world's **[205 sovereign states](https://en.wikipedia.org/wiki/List_of_sovereign_states)** (820 cards)
-- **59 territories, world regions, and other entities** (103 cards)
-- **48 oceans and seas** (48 cards, maps only)
-- **7 continents** (7 cards, maps only)
-- for a total of **319 unique notes**, **978 cards**, **221 flags** and **319 maps**.
+- 世界上的**[205个主权国家](https://en.wikipedia.org/wiki/List_of_sovereign_states)**（820张卡片）
+- **59个领地、世界区域和其他实体**（103张卡片）
+- **48个海洋和海域**（仅48张地图卡片）
+- **7大洲**（仅7张地图卡片）
+- 总计**319个独特笔记**、**978张卡片**、**221面国旗**和**319张地图**。
 
-The deck is available in **English**, **German**, **Spanish**, **French**, **Norwegian Bokmål**, **Czech**, **Russian**, **Dutch**, **Swedish**, **Portuguese**, **Chinese** (simplified and traditional), **Polish**, **Italian** and **Danish**.
+此卡片组提供多种语言版本：**英语**、**德语**、**西班牙语**、**法语**、**挪威语（书面）**、**捷克语**、**俄语**、**荷兰语**、**瑞典语**、**葡萄牙语**、**中文**（简体和繁体）、**波兰语**、**意大利语**和**丹麦语**。
 
 ---
 
-#### Table of contents
+#### 目录
 
-- [**Features**](#features)
-  - [Supplementary information](#supplementary-information)
-  - [Custom study](#custom-study)
-- [**Getting started**](#getting-started)
-- [**Upgrading**](#upgrading)
-  - [First upgrade after APKG import](#first-upgrade-after-apkg-import)
-  - [Keeping deck customisations](#keeping-deck-customisations)
-  - [Levelling up from standard to extended (or to experimental)](#levelling-up-from-standard-to-extended-or-to-experimental)
-  - [Major version](#major-version)
-- [**Deck structure**](#deck-structure)
-- [**Customising the deck**](#customising-the-deck)
-  - [Changes that are or can be preserved](#changes-that-are-or-can-be-preserved-)
-  - [Changes that get reverted](#changes-that-get-reverted-)
-  - [Changes that prevent upgrading](#changes-that-prevent-upgrading-)
+- [**功能特点**](#features)
+  - [补充信息](#supplementary-information)
+  - [自定义学习](#custom-study)
+- [**开始使用**](#getting-started)
+- [**升级**](#upgrading)
+  - [从APKG导入后首次升级](#first-upgrade-after-apkg-import)
+  - [保留卡组自定义设置](#keeping-deck-customisations)
+  - [从标准版升级到扩展版（或实验版）](#levelling-up-from-standard-to-extended-or-to-experimental)
+  - [主要版本升级](#major-version)
+- [**卡组结构**](#deck-structure)
+- [**自定义卡组**](#customising-the-deck)
+  - [可以保留的更改](#changes-that-are-or-can-be-preserved-)
+  - [会被还原的更改](#changes-that-get-reverted-)
+  - [会阻止升级的更改](#changes-that-prevent-upgrading-)
 
-## Features
+## 功能特点
 
-The standard version of the deck comes with four note templates: _Country - Capital_, _Capital - Country_, _Flag - Country_, and _Map - Country_. An **extended version** is also available, with two additional note templates: _Country - Flag_ and _Country - Map_. The [experimental version](https://github.com/anki-geo/ultimate-geography/wiki/Experimental-extended-deck) is a clone of extended version except it also provides interactivity for the _Country - Map_ note template.
+标准版卡组包含四种笔记模板：_国家 - 首都_、_首都 - 国家_、_国旗 - 国家_和_地图 - 国家_。此外还有一个**扩展版**，其中包含两个额外的笔记模板：_国家 - 国旗_和_国家 - 地图_。[实验版](https://github.com/anki-geo/ultimate-geography/wiki/Experimental-extended-deck)是扩展版的克隆版本，但它为_国家 - 地图_笔记模板提供了交互功能。
 
 <table>
-  <tr><th scope="col" colspan="2">Flag - Country</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr><th scope="col" colspan="2">国旗 - 国家</th></tr>
+  <tr><th scope="col">正面</th><th scope="col">背面</th></tr>
   <tr>
     <td><img src="doc/Flag - Country -- Front -- Christmas island.png"></td>
     <td><img src="doc/Flag - Country -- Back -- Christmas island.png"></td>
@@ -43,8 +43,8 @@ The standard version of the deck comes with four note templates: _Country - Capi
 </table>
 
 <table>
-  <tr><th scope="col" colspan="2">Map - Country</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr><th scope="col" colspan="2">地图 - 国家</th></tr>
+  <tr><th scope="col">正面</th><th scope="col">背面</th></tr>
   <tr>
     <td><img src="doc/Map - Country -- Front -- Mexico.png"></td>
     <td><img src="doc/Map - Country -- Back -- Mexico.png"></td>
@@ -52,8 +52,8 @@ The standard version of the deck comes with four note templates: _Country - Capi
 </table>
 
 <table>
-  <tr><th scope="col" colspan="2">Country - Capital</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr><th scope="col" colspan="2">国家 - 首都</th></tr>
+  <tr><th scope="col">正面</th><th scope="col">背面</th></tr>
   <tr>
     <td><img src="doc/Country - Capital -- Front -- Sri Lanka.png"></td>
     <td><img src="doc/Country - Capital -- Back -- Sri Lanka.png"></td>
@@ -61,23 +61,23 @@ The standard version of the deck comes with four note templates: _Country - Capi
 </table>
 
 <table>
-  <tr><th scope="col" colspan="2">Capital - Country</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr><th scope="col" colspan="2">首都 - 国家</th></tr>
+  <tr><th scope="col">正面</th><th scope="col">背面</th></tr>
   <tr>
     <td><img src="doc/Capital - Country -- Front -- Finland.png"></td>
     <td><img src="doc/Capital - Country -- Back -- Finland.png"></td>
   </tr>
 </table>
 
-### Supplementary information
+### 补充信息
 
-To help with memorisation and provide context while learning, most notes include extra information:
+为了帮助记忆并在学习过程中提供背景信息，大多数笔记包含额外的信息：
 
-- **similar flags** - e.g. Iceland = _Norway (red background, blue cross)_
-- **governance information** - e.g. Cayman Islands = _Overseas territory of the United Kingdom_
-- **alternative and former country names** - e.g. Timor-Leste = _Also known as East Timor_
-- **additional capitals** - e.g. Sucre, Bolivia = _While Sucre is the constitutional capital, La Paz is the seat of government._
-- **statehood information** - e.g. Transnistria = _Independent state claimed by Moldova_.
+- **相似国旗** - 例如，冰岛 = _挪威（红色背景，蓝色十字）_
+- **治理信息** - 例如，开曼群岛 = _英国的海外领土_
+- **替代和前国名** - 例如，东帝汶 = _也称为东帝汶_
+- **其他首都信息** - 例如，苏克雷，玻利维亚 = _虽然苏克雷是宪法规定的首都，但拉巴斯是政府所在地。_
+- **国家地位信息** - 例如，德涅斯特里 = _被摩尔多瓦声称的独立国家_。
 
 ### Custom study
 
